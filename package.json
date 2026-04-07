@@ -1,6 +1,6 @@
 {
   "name": "@cumulus-ui/styles",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Full Cumulus UI environment — normalize, fonts, design tokens, body rules, dark mode, compact mode, contexts, and keyframes",
   "type": "module",
   "main": "./index.js",
