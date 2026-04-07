@@ -8,7 +8,7 @@ const ROOT = resolve(__dirname, '..');
 const CS = resolve(ROOT, 'node_modules/@cloudscape-design');
 const SCOPED_CSS = resolve(CS, 'components/internal/base-component/styles.scoped.css');
 const GLOBAL_CSS = resolve(CS, 'global-styles/index.css');
-const OUT = resolve(ROOT, 'styles.css');
+const OUT = resolve(ROOT, 'index.css');
 
 const scoped = readFileSync(SCOPED_CSS, 'utf-8');
 const global = readFileSync(GLOBAL_CSS, 'utf-8');
@@ -37,4 +37,4 @@ const css = [
 writeFileSync(OUT, css);
 
 const lines = css.split('\n').length;
-console.log(`✓ Generated styles.css (${lines} lines)`);
+console.log(`✓ Generated index.css (${lines} lines)`);
