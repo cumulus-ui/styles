@@ -17,13 +17,16 @@ const cleaned = scoped
   .replace(/:not\(#\\9\)/g, '')
   .replace(/\/\*[\s\S]*?Copyright[\s\S]*?\*\//g, '');
 
+const fontsOptimized = global
+  .replace(/src:\s*url\(/g, "src: local('Open Sans'), url(");
+
 const css = [
   '/* AUTO-GENERATED — DO NOT EDIT */',
   '/* Source: @cloudscape-design/global-styles + @cloudscape-design/components theming runtime */',
   '',
   '/* ── Normalize + Fonts ── */',
   '',
-  global,
+  fontsOptimized,
   '',
   '/* ── Tokens + Environment ── */',
   '',
