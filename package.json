@@ -1,0 +1,30 @@
+{
+  "name": "@cumulus-ui/styles",
+  "version": "0.0.1",
+  "description": "Full Cumulus UI environment — normalize, fonts, design tokens, body rules, dark mode, compact mode, contexts, and keyframes",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "styles.css"
+  ],
+  "scripts": {
+    "generate": "tsx scripts/generate.ts"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@cloudscape-design/components": "^3.0.0",
+    "@cloudscape-design/global-styles": "^1.0.56",
+    "tsx": "^4.21.0",
+    "typescript": "~5.7.0"
+  }
+}
