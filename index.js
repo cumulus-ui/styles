@@ -19,16 +19,16 @@ function toggleClass(target, className, enabled) {
 }
 
 export function applyMode(mode, target) {
-  if (target === void 0) { target = document.body; }
+  if (target === void 0) { target = document.documentElement; }
   toggleClass(target, 'awsui-dark-mode', mode === Mode.Dark);
 }
 
 export function applyDensity(density, target) {
-  if (target === void 0) { target = document.body; }
+  if (target === void 0) { target = document.documentElement; }
   toggleClass(target, 'awsui-compact-mode', density === Density.Compact);
 }
 
 export function disableMotion(disabled, target) {
-  if (target === void 0) { target = document.body; }
+  if (target === void 0) { target = document.documentElement; }
   toggleClass(target, 'awsui-motion-disabled', disabled);
 }
