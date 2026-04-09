@@ -1,7 +1,8 @@
 {
   "name": "@cumulus-ui/styles",
-  "version": "0.1.0",
-  "description": "Full Cumulus UI environment — normalize, fonts, design tokens, body rules, dark mode, compact mode, contexts, and keyframes",
+  "version": "0.1.1",
+  "deprecated": "Use @cumulus-ui/design-tokens instead. This package is no longer maintained.",
+  "description": "DEPRECATED — Use @cumulus-ui/design-tokens instead.",
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",

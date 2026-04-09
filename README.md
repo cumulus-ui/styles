@@ -1,19 +1,28 @@
-# @cumulus-ui/styles
+# @cumulus-ui/styles — DEPRECATED
 
-Full environment CSS for Cumulus UI — normalize, fonts, design tokens, dark/compact mode, and keyframes.
+> **This package is deprecated.** Use [`@cumulus-ui/design-tokens`](https://github.com/cumulus-ui/design-tokens) instead.
 
-## CSS
+## Migration
+
+Replace:
 
 ```js
 import "@cumulus-ui/styles/index.css";
 ```
 
-## Utilities
+With:
 
 ```js
-import { applyMode, Mode, applyDensity, Density, disableMotion } from "@cumulus-ui/styles";
+import "@cumulus-ui/design-tokens/tokens.css";
+```
 
-applyMode(Mode.Dark);
-applyDensity(Density.Compact);
-disableMotion(true);
+`@cumulus-ui/design-tokens` provides:
+- 725 clean, dehashed CSS custom properties on `:root`
+- 364 dark mode overrides via `.awsui-dark-mode`
+- `color-scheme: dark` for native dark scrollbars and form controls
+- JS/TS exports for all token values
+
+Dark mode toggle:
+```js
+document.documentElement.classList.toggle('awsui-dark-mode');
 ```
