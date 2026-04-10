@@ -23,9 +23,9 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@cloudscape-design/components": "^3.0.1267",
-    "@cloudscape-design/global-styles": "^1.0.56",
+    "@cloudscape-design/components": "^3.0.1270",
+    "@cloudscape-design/global-styles": "^1.0.57",
     "tsx": "^4.21.0",
-    "typescript": "~5.9.3"
+    "typescript": "~6.0.2"
   }
 }
